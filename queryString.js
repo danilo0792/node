@@ -6,7 +6,7 @@ var server = http.createServer(function(request, response){
 	response.writeHead(200, {"Content-Type" : "text/html" });
 	response.write("<html><body>");
 	response.write("<h1>Dados da query string</h1>");
-
+	
 	for(var key in result.query){
 		response.write("<h2>" + key + " : " + result.query[key] + "</h2>");
 	}
